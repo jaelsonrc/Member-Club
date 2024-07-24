@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  /* Color styles */
+  --pink: #d658b3;
+  --green: #45b442;
+  --white: #ffffff;
+  --gray-100: #f4f1f2;
+  --gray-200: #e9e7e9;
+  --gray-300: #dfdcdf;
+  --gray-400: #cecacd;
+  --gray-500: #756c71;
+  --gray-600: #4a4448;
+  --gray-700: #332b31;
+
+  
+  --gradient-base: linear-gradient(
+    90deg,
+    #2daa6e 0%,
+    #2daaaa 33.33%,
+    #856ccf 66.67%,
+    #d658b3 100%
+  );
+
+  /* Text-size styles */
+  /* base size: text--md (16px) */
+  --title-md: 1.5rem;
+  --title-sm: 1.12rem;
+  --subtitle-md: 0.88rem;
+  --subtitle-sm: 0.75rem;
+  --text-md: 1rem;
+  --text-sm: 0.88rem;
+  --text-xs: 0.75rem;
+
+    /* sizes / spacing */
+    --spacing---xs: 0.25rem;
+    --spacing---sm: 0.5rem;
+    --spacing---md: 1rem;
+    --radius--lg: 1rem;
+    --radius--md: 0.75rem;
+    --radius--sm: 0.5rem;
+
+    --ff-base: "Oxygen", sans-serif;
+    
+    --body---text--md: 1rem;
+    --body---text--sm: 0.875rem;
+    --body---text--xs: 0.75rem;
+    --font-bold: 700;
+    --font-regular: 400;
+
+  --ff--title-md: var(--font-bold) var(--title-md)/140% var(--ff-base);
+  --ff--title-sm: var(--font-bold) var(--title-sm)/140% var(--ff-base);
+  --ff--subtitle-md: var(--font-bold) var(--subtitle-md)/140% var(--ff-base);
+  --ff--subtitle-sm: var(--font-bold) var(--subtitle-sm)/140% var(--ff-base);
+  --ff--text-md: var(--font-regular) var(--body---text--md)/140% var(--ff-base);
+  --ff--text-sm: var(--font-regular) var(--body---text--sm)/140% var(--ff-base);
+  --ff--text-xs: var(--font-regular) var(--body---text--xs)/140% var(--ff-base);
+}
+
+html,
+button {
+  font: 400 1rem/1.4 var(--ff-base);
+  background: var(--gray-200);
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--title-md);
+}
+
+h3 {
+  font-size: var(--title-sm);
+}
+
+h4 {
+  font-size: var(--subtitle-md);
+}
+
+h5 {
+  font-size: var(--subtitle-sm);
+}
+
+body{
+  padding-bottom: 2rem;
+  background: var(--gray-200);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}

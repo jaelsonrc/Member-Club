@@ -1,0 +1,52 @@
+form {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  margin-inline: auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
+
+  & > button {
+    position: absolute;
+    z-index: 2;
+    top: var(--spacing---sm);
+    right: var(--spacing---sm);
+    height: 40px;
+    width: 40px;
+    border-radius: var(--radius--sm);
+    border: none;
+    background: var(--gray-700);
+    cursor: pointer;
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+      background: var(--gray-600);
+    }
+  }
+  & > input {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding-left: var(--spacing---md);
+    padding-right: calc(40px-var(--spacing---md));
+    height: 56px;
+    border-radius: var(--radius--md);
+    border: 1px solid var(--gray-400);
+    background-color: var(--gray-300);
+
+    &:focus,
+    &:active {
+      outline: none;
+      border-color: var(--pink);
+      border-width: 1.5px;
+    }
+  }
+}

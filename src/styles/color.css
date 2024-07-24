@@ -1,0 +1,39 @@
+.text-main-pink {
+  color: var(--pink);
+}
+
+.text-main-green {
+  color: var(--green);
+}
+
+.text-base-white {
+  color: var(--white);
+}
+
+.text-base-gray-100 {
+  color: var(--gray-100);
+}
+
+.text-base-gray-200 {
+  color: var(--gray-200);
+}
+
+.text-base-gray-300 {
+  color: var(--gray-300);
+}
+
+.text-base-gray-400 {
+  color: var(--gray-400);
+}
+
+.text-base-gray-500 {
+  color: var(--gray-500);
+}
+
+.text-base-gray-600 {
+  color: var(--gray-600);
+}
+
+.text-base-gray-700 {
+  color: var(--gray-700);
+}

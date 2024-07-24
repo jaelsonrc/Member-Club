@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projeto - Member Club</title>
+    <link rel="stylesheet" href="src/styles/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="./src/assets/Logo.png" alt="Member Club" />
+      </header>
+      <form>
+        <input
+          class="input"
+          placeholder="ID do cartão"
+          type="text"
+          id="id-cartao"
+          required="required"
+        />
+        <button type="submit">
+          <img src="./src/assets/Enter.svg" alt="Pesquisar" />
+        </button>
+      </form>
+
+      <main>
+        <section class="card profile">
+          <div class="user-profile flex items-center gap-1">
+            <div class="image">
+              <img src="./src/assets/profile.png" alt="Profile" />
+            </div>
+            <div class="flex flex-column gap-0.25">
+              <h3 class="title-sm text-base-gray-600">Natalia Miranda</h3>
+              <p class="text-xs text-base-gray-500">Cliente desde 18/09/2023</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card fidelity">
+          <header>
+            <div>
+              <h3 class="subtitle-sm text-base-gray-500">CARTÃO FIDELIDADE</h3>
+              <span class="text-sm text-base-gray-500"
+                >Ao fazer cortes de cabelo, o décimo sai de graça!</span
+              >
+            </div>
+            <div class="user-tag subtitle-md">
+              <h4>ID: 124-537-835-230</h4>
+            </div>
+          </header>
+
+          <div class="stamps">
+            <div class="box stamp-checked">
+              <img src="./src/assets/PinCheck.png" alt="stamp" />
+            </div>
+            <div class="box stamp-checked">
+              <img src="./src/assets/PinCheck.png" alt="stamp" />
+            </div>
+            <div class="box stamp-checked">
+              <img src="./src/assets/PinCheck.png" alt="stamp" />
+            </div>
+            <div class="box stamp-checked">
+              <img src="./src/assets/PinCheck.png" alt="stamp" />
+            </div>
+            <div class="box stamp-checked">
+              <img src="./src/assets/PinCheck.png" alt="stamp" />
+            </div>
+            <div class="box stamp-checked">
+              <img src="./src/assets/PinCheck.png" alt="stamp" />
+            </div>
+            <div class="box stamp-checked">
+              <img src="./src/assets/PinCheck.png" alt="stamp" />
+            </div>
+            <div class="box stamp-empty"></div>
+            <div class="box stamp-empty"></div>
+            <div class="box stamp-gift">
+              <img
+                src="./src/assets/icons/Gift-Solid.svg"
+                alt=""
+                class="Check"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="card history">
+          <header class="flex items-center space-between">
+            <h3 class="subtitle-sm text-base-gray-500">HISTÓRICO</h3>
+            <span class="text-xs text-base-gray-500">7 cortes</span>
+          </header>
+
+          <ul id="appointments" class="flex flex-column gap-0.75">
+            <li class="history-card flex items-center space-between">
+              <div class="time">
+                <p class="subtitle-sm">29/04/2024</p>
+                <p class="text-xs">18:30</p>
+              </div>
+
+              <div class="check">
+                <img src="./src/assets/seal-check.svg" alt="check" />
+              </div>
+            </li>
+            <li class="history-card flex items-center space-between">
+              <div class="time">
+                <p class="subtitle-sm">29/04/2024</p>
+                <p class="text-xs">18:30</p>
+              </div>
+
+              <div class="check">
+                <img src="./src/assets/seal-check.svg" alt="check" />
+              </div>
+            </li>
+            <li class="history-card flex items-center space-between">
+              <div class="time">
+                <p class="subtitle-sm">29/04/2024</p>
+                <p class="text-xs">18:30</p>
+              </div>
+
+              <div class="check">
+                <img src="./src/assets/seal-check.svg" alt="check" />
+              </div>
+            </li>
+            <li class="history-card flex items-center space-between">
+              <div class="time">
+                <p class="subtitle-sm">29/04/2024</p>
+                <p class="text-xs">18:30</p>
+              </div>
+
+              <div class="check">
+                <img src="./src/assets/seal-check.svg" alt="check" />
+              </div>
+            </li>
+            <li class="history-card flex items-center space-between">
+              <div class="time">
+                <p class="subtitle-sm">29/04/2024</p>
+                <p class="text-xs">18:30</p>
+              </div>
+
+              <div class="check">
+                <img src="./src/assets/seal-check.svg" alt="check" />
+              </div>
+            </li>
+            <li class="history-card flex items-center space-between">
+              <div class="time">
+                <p class="subtitle-sm">29/04/2024</p>
+                <p class="text-xs">18:30</p>
+              </div>
+
+              <div class="check">
+                <img src="./src/assets/seal-check.svg" alt="check" />
+              </div>
+            </li>
+            <li class="history-card flex items-center space-between">
+              <div class="time">
+                <p class="subtitle-sm">29/04/2024</p>
+                <p class="text-xs">18:30</p>
+              </div>
+
+              <div class="check">
+                <img src="./src/assets/seal-check.svg" alt="check" />
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="card milestone">
+          <div class="flex space-between gap-1">
+            <aside class="flex flex-column flex-1 gap-0.75">
+              <div class="flex gap-0.5 items-baseline">
+                <h3 class="title-md text-base-gray-600">3</h3>
+                <span class="text-md text-base-gray-500">cortes restantes</span>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar">
+                  <div class="progress"></div>
+                </div>
+                <div class="progress-text text-base-gray-500 text-xs text-nowrap">
+                  0 de 10
+                </div>
+              </div>
+            </aside>
+            <div class="image">
+              <img src="src/assets/PinGift.png" alt="gift" />
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div id="gift-achieved-modal">
+      <div>
+        <h2>Parabéns!</h2>
+        <h3>🎉🎉🎉</h3>
+        <h4>Seu próximo corte é gratuito!</h4>
+        <img src="src/assets/PinGift.png" alt="gift" />
+        <button type="button" class="close-x">
+          <img src="src/assets/icons/Close-X.svg" alt="close" />
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
