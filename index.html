@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <title>Projeto - Member Club</title>
-    <link rel="stylesheet" href="src/styles/index.css" />
+    <link rel="icon" href="src/assets/Logo.png" />
   </head>
   <body>
     <div class="container">
@@ -34,11 +34,11 @@
         <section class="card profile">
           <div class="user-profile flex items-center gap-1">
             <div class="image">
-              <img src="./src/assets/profile.png" alt="Profile" />
+              <img id="userInfo-urlImg" src="./src/assets/default.png" alt="Profile" />
             </div>
             <div class="flex flex-column gap-0.25">
-              <h3 class="title-sm text-base-gray-600">Natalia Miranda</h3>
-              <p class="text-xs text-base-gray-500">Cliente desde 18/09/2023</p>
+              <h3 id="userInfo-name" class="title-sm text-base-gray-600"></h3>
+              <p id="userInfo-since" class="text-xs text-base-gray-500"></p>
             </div>
           </div>
         </section>
@@ -51,8 +51,8 @@
                 >Ao fazer cortes de cabelo, o décimo sai de graça!</span
               >
             </div>
-            <div class="user-tag subtitle-md">
-              <h4>ID: 124-537-835-230</h4>
+            <div class="user-tag">
+              <h4 class="subtitle-md"></h4>
             </div>
           </header>
 
@@ -179,7 +179,7 @@
               </div>
               <div class="progress-container">
                 <div class="progress-bar">
-                  <div class="progress"></div>
+                  <progress max="10" value="7"></progress>
                 </div>
                 <div class="progress-text text-base-gray-500 text-xs text-nowrap">
                   0 de 10
@@ -203,6 +203,12 @@
         <button type="button" class="close-x">
           <img src="src/assets/icons/Close-X.svg" alt="close" />
         </button>
+      </div>
+    </div>
+
+    <div class="loading">
+      <div class="loading-circle">
+
       </div>
     </div>
   </body>

@@ -87,3 +87,26 @@
 .gap-0\.25 {
   gap: 0.25rem;
 }
+
+
+.loading {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

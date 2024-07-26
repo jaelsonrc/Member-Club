@@ -118,45 +118,83 @@ main {
   grid-area: milestone;
   padding-inline: 2rem;
 
+
   & .image {
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    background: var(--base---gray-200);
-    width: 72px;
-    height: 72px;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: var( --spacing---sm);
+
+    border-radius: var(--border-radius-full);
+    background: var(--gray-200);
+
+    & img {
+      width: 64px;
+      height: 64px;    
+    }
+
+    @media (min-width: 62em) 
+    {
+
+      width: 4.5rem;
+      height: 4.5rem;
+      padding: var(--space-min);
+
+      & img {
+        width: 2.5rem;
+      }
+    }
   }
 
-  & img {
-    width: 64px;
-  }
 
   .progress-container {
     --bar-height: 8px;
     position: relative;
     display: flex;
     align-items: center;
+    gap: var(--spacing---sm);
 
+    
     & .progress-bar {
-      position: relative;
-      height: var(--bar-height);
-      background: var(--gray-300);
-      border-radius: 100px;
-      width: 100%;
-      margin-right: 1rem;
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+
+      & progress,
+      & progress::-webkit-progress-bar,
+      & progress::-webkit-progress-value {
+        border-radius: var(--border-radius-full);
+      }
+
+      & progress {
+        width: 6rem;
+        height: 0.5rem;
+
+        @media (min-width: 21.5em) {
+          width: 8rem;
+        }
+
+        @media (min-width: 23.4em) {
+          width: 11rem;
+        }
+
+        @media (min-width: 62em) {
+          width: 22rem;
+        }
+      }
+
+      & progress::-webkit-progress-bar {
+        background: var(--gray-300);
+      }
+
+      & progress::-webkit-progress-value {
+        background: var(--gradient-base);
+      }
     }
 
-    & .progress {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      height: var(--bar-height);
-      width: var(--dynamic-width, 0%);
-      background: var(--gradient-base);
-      border-radius: 100px;
-    }
+
   }
 }
 

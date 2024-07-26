@@ -40,13 +40,23 @@
   --text-xs: 0.75rem;
 
     /* sizes / spacing */
+    --space-min: 0.25rem;
+    --space-sm: 0.5rem;
     --spacing---xs: 0.25rem;
     --spacing---sm: 0.5rem;
     --spacing---md: 1rem;
     --radius--lg: 1rem;
     --radius--md: 0.75rem;
     --radius--sm: 0.5rem;
+    --border-radius-full: 999px;
 
+    --gradient-base: linear-gradient(
+      90deg,
+      #2daa6e 0%,
+      #2daaaa 33.33%,
+      #856ccf 66.67%,
+      #d658b3 100%
+    );
     --ff-base: "Oxygen", sans-serif;
     
     --body---text--md: 1rem;
